@@ -3,9 +3,9 @@ import { handleSignUp, handleSignIn, handleSignOut } from "../controllers/auth";
 
 const routerAuth = express.Router();
 
-routerAuth.post("/signup", handleSignUp);
-routerAuth.post("/signin", handleSignIn);
-routerAuth.post("/signout", handleSignOut);
+routerAuth.post('/auth/signup', handleSignUp);
+routerAuth.post('/auth/signin', handleSignIn);
+routerAuth.post('/auth/signout', handleSignOut);
 
 
 export default routerAuth;
